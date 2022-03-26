@@ -138,6 +138,23 @@
 
 /*  SMALL SCREEN */
 @media screen and (max-width: 767px) { 
+
+    .text-card h2
+    {
+        animation: fading 1s ease-in-out forwards !important
+    }
+
+    img.jordan
+    {
+        animation: slideIn 1s ease-out forwards !important;
+    }
+
+    .text-card > p
+    {
+        animation: showText forwards .3s ease-in-out !important;
+    }
+
+
     div.card
     {
         width: 80% !important;

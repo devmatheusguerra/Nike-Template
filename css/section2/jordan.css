@@ -1,7 +1,7 @@
 div.biography img.jordan {
     width: auto;
     height: 90vh;
-    animation: slideIn 2s ease-out forwards;
+    transform: translateX(-100%);
 }
 
 
