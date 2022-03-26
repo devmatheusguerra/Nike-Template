@@ -1,0 +1,149 @@
+div.banner div.card {
+    position: absolute;
+    top: 68%;
+    left: 50px;
+    transform: translate(0, -50%);
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(255,255,2555,0.4);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nike TG';
+    overflow: visible;
+}
+
+div.card h1.title {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #2b2b2b;
+    ;
+    margin: 0;
+    text-align: center;
+}
+
+div.card div.sizes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+
+div.card div.sizes span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    border: solid 2px #2b2b2b;
+    color: #2b2b2b;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 0px !important;
+    user-select: none;
+    transform: scale(1);
+}
+
+/* OUT OF STOCK */
+div.card div.sizes span.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Selected */
+div.card div.sizes span.selected {
+    transform: scale(1.5);
+}
+
+
+
+div.card div.colors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+div.card div.colors img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    border: solid 2px #d3d3d3;
+    color: #2b2b2b;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+
+div.card div.colors img.selected {
+    transform: scale(1.5);
+}
+
+
+div.card div.colors img.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
+div.card h2.price {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgb(26, 26, 26);
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+div.card h4.price-12 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: rgb(26, 26, 26);
+    margin: 0 !important;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+div.card button {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    background: #1a1a1a;
+    color: white;
+    margin: 30px 0 !important;
+    text-align: center;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.signature {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    user-select: none;
+}

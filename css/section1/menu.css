@@ -1,0 +1,13 @@
+#menu {
+    border: 0;
+    font-size: 2rem;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+    overflow: visible;
+    cursor: pointer;
+    outline: 0;
+    display: none;
+}

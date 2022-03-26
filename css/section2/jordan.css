@@ -1,0 +1,19 @@
+div.biography img.jordan {
+    width: auto;
+    height: 90vh;
+    animation: slideIn 2s ease-out forwards;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    filter: blur(10px) grayscale(100%);
+  }
+
+    100% {
+        transform: translateX(0);
+        filter:blur(0) grayscale(100%) contrast(1);
+    }
+    
+}

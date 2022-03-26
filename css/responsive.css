@@ -1,0 +1,244 @@
+/* LARGE SCREEN */
+@media screen and (min-width: 1200px) { 
+    div.card h1.title
+    {
+        font-size: 1.5rem;
+    }
+
+    div.card div.sizes span
+    {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    div.card div.colors img
+    {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    div.card h2.price
+    {
+        font-size: 1.7rem;
+    }
+
+    div.card h4.price-12
+    {
+        font-size: 1rem;
+    }
+
+    div.card button{
+        margin: 15px 0 !important;
+        font-size: 1rem;
+    }
+
+    img.emphasis{
+        width: 50%;
+    }
+}
+
+/* MEDIUM SCREEN */
+@media screen and (min-width: 768px) and (max-width: 1199px) { 
+    div.card
+    {
+        width: 80% !important;
+    }
+
+    nav a
+    {
+        font-size: 1rem;
+        text-align: center          ;
+    }
+
+    div.card h1.title
+    {
+        font-size: 1.5rem;
+    }
+
+    div.card div.sizes span
+    {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    div.card div.colors img
+    {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    div.card h2.price
+    {
+        font-size: 1.7rem;
+    }
+
+    div.card h4.price-12
+    {
+        font-size: 1rem;
+    }
+
+    div.card button{
+        margin: 15px 0 !important;
+        font-size: 1rem;
+    }
+
+    img.emphasis{
+        width: 50%;
+    }
+
+
+    /* Biography */
+    div.biography img.jordan
+    {
+        width: 80% !important;
+        height: auto !important;
+        opacity: 0.2 !important;
+        position: absolute;
+    }
+    .text-card 
+    {
+        max-width: 90vw;
+        padding: 0 5vw !important;
+    }
+
+    .text-card h2
+    {
+        font-size: 1.5rem;
+    }
+
+
+    /* Footer */
+    .footer
+    {
+        padding-bottom: 50px !important;
+    }
+    .links
+    {
+        width: fit-content !important;
+        margin: 0 10px;
+    }
+
+    .links a
+    {
+        font-size: .75rem !important;
+    }
+
+    .help
+    {
+        width: fit-content !important;
+        margin: 0 10px;
+    }
+
+    .about
+    {
+        width: fit-content !important;
+        margin: 0 10px;
+    }
+}
+
+/*  SMALL SCREEN */
+@media screen and (max-width: 767px) { 
+    div.card
+    {
+        width: 80% !important;
+    }
+
+    nav {
+        display: none;
+    }
+
+    div.card{
+        margin: 0 !important;
+        position: absolute;
+        left: 0 !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    div.card h1.title
+    {
+        font-size: 1.3rem;
+    }
+
+    div.card div.sizes span
+    {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    div.card div.colors img
+    {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    div.card h2.price
+    {
+        font-size: 1.5rem;
+    }
+
+    div.card h4.price-12
+    {
+        font-size: 1.2rem;
+    }
+
+    div.card button{
+        margin: 15px 0 !important;
+        font-size: 1rem;
+    }
+
+    img.emphasis{
+        width: 50%;
+        top: 0;
+    }
+
+    /* Biography */
+    div.biography img.jordan
+    {
+        width: 80% !important;
+        height: auto !important;
+        opacity: 0.2 !important;
+        position: absolute;
+    }
+    .text-card 
+    {
+        max-width: 90vw;
+        padding: 0 5vw !important;
+    }
+
+    .text-card h2
+    {
+        font-size: 1rem;
+    }
+
+    .text-card p{
+        font-size: .7rem;
+    }
+
+    div.related-products div.roll div.roll-item h2.title
+    {
+        font-size: 1rem;
+    }
+
+    .footer .links a
+    {
+        font-size: .75rem !important;
+    }
+
+    img.signature{
+        width: 20%
+    }
+
+    .roll {
+        overflow-x: auto;
+    }
+
+    div.related-products div.roll div.roll-item{
+        flex: 0 0 50%;
+        width: 50% !important;
+    }
+
+    #menu
+    {
+        display: block;
+    }
+}

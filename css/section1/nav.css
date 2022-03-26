@@ -1,0 +1,39 @@
+
+nav {
+    width: 100% !important;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    min-width: 80px;
+    width: max-content;
+    padding: 10px 0;
+    margin: 0 5px;
+    color: #2b2b2b;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Nike TG';
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+nav a::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    width: 10%;
+    height: 5px;
+    background-color: #1b1b1e;
+    transition: all .3s ease-in-out;
+    border-radius: 1px;
+}
+
+nav a:hover::after {
+    visibility: visible;
+    width: 100%;
+}

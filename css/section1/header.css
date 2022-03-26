@@ -1,0 +1,24 @@
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    padding: 20px 0;
+    border-bottom: solid 10px #1b1b1e;
+    position: relative;
+}
+
+.presentation header img#logo {
+    width: 100px;
+    padding: 20px 0;
+    position: relative;
+}
+
+
+header div.banner {
+    width: 100%;
+    position: relative;
+}

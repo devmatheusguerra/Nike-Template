@@ -1,0 +1,13 @@
+.footer
+{
+    width: 94% !important;
+    height: fit-content;
+    background-color: #101010;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: 'Nike TG';
+    padding: 5vh 3vw;
+    
+}

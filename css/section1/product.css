@@ -1,0 +1,20 @@
+img.emphasis {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width: 80%;
+    max-width: 500px;
+    z-index: 9;
+    transform-origin: center;
+    transform-style: preserve-3D;
+    transition: all .1s ease-out;
+    transform: translate(-50%, -50%) rotate(10deg) scale(1);
+    opacity: 1;
+}
+
+
+.transition-all {
+    transition: all .5s ease-in-out !important;
+    transform: translate(-50%, -50%) rotate(360deg) scale(.7) !important;
+    opacity: 0 !important;
+}
