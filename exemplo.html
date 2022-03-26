@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Navigation Bar</title>
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Import main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <img id="logo" src="./assets/img/logo.png" alt="Logo marca da nike">
+            <nav>
+                <a href="#">
+                    Air Max Day
+                </a>
+                <a href="#">
+                    Lançamentos
+                </a>
+                <a href="#">
+                    Feminino
+                </a>
+                <a href="#">
+                    Masculino
+                </a>
+                <a href="#">
+                    Infantil
+                </a>
+                <a href="#">
+                    snkrs
+                </a>
+                <a href="#">
+                    Ofertas
+                </a>
+            </nav>
+
+            <button id="basket">
+                <span class="badge">0</span>
+                <i class="fa fa-shopping-basket"></i>
+            </button>
+        </header>
+        <div class="banner">
+            <div class="card">
+                <img class="emphasis" src="./assets/img/shoes-orange.png" alt="">
+                <h1 class="title">Tênis Air Jordan 1 Mid SE - Masculino</h1>
+                <div class="colors">
+                    <img class='disabled' src="./assets/img/blue.png" alt="">
+                    <img class="selected" src="./assets/img/orange.png" alt="">
+                    <img src="./assets/img/red.png" alt="">
+                    <img src="./assets/img/brown.png" alt="" class="disabled">
+                </div>
+                <div class="sizes">
+                    <span>41</span>
+                    <span class="disabled">42</span>
+                    <span class="disabled">43</span>
+                    <span>44</span>
+                    <span class="selected">45</span>
+                    <span>47</span>
+                </div>
+                <h2 class="price">
+                    R$ 970,00
+                </h2>
+                <h4 class="price-12">
+                    12 x R$ 80,83
+                </h4>
+
+                <button id="btn_add_cart">Adicionar produto</button>
+                <img class="signature" src="./assets/img/michael-jordan.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="history">
+
+        <img class="jordan" src="./assets/img/history/jordan.png" alt="">
+    </div>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

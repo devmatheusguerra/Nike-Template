@@ -1,0 +1,350 @@
+@import url(./fonts.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    height: max-content !important;
+    overflow-x: hidden !important;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../assets/img/banner.jpg);
+    background-size: 100%;
+    background-position: center;
+    filter: brightness(1.1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    padding: 20px 0;
+    border-bottom: solid 10px #1b1b1e;
+    position: relative;
+}
+
+.app header img#logo {
+    width: 100px;
+    padding: 20px 0;
+    position: relative;
+}
+
+nav {
+    width: 100% !important;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    min-width: 80px;
+    width: max-content;
+    padding: 10px 0;
+    margin: 0 5px;
+    color: #2b2b2b;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Nike TG';
+    font-size: 1.2rem;
+}
+
+
+nav a::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    width: 10%;
+    height: 5px;
+    background-color: #1b1b1e;
+    transition: all .3s ease-in-out;
+    border-radius: 1px;
+}
+
+nav a:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+header div.banner {
+    width: 100%;
+    position: relative;
+}
+
+div.banner div.card {
+    position: absolute;
+    top: 68%;
+    left: 50px;
+    transform: translate(0, -50%);
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(255,255,2555,0.4);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nike TG';
+    overflow: visible;
+}
+
+div.card h1.title {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #2b2b2b;
+    ;
+    margin: 0;
+    text-align: center;
+}
+
+div.card div.sizes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+
+div.card div.sizes span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    border: solid 2px #2b2b2b;
+    color: #2b2b2b;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 0px !important;
+    user-select: none;
+    transform: scale(1);
+}
+
+/* OUT OF STOCK */
+div.card div.sizes span.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Selected */
+div.card div.sizes span.selected {
+    transform: scale(1.5);
+}
+
+
+
+div.card div.colors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+div.card div.colors img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    border: solid 2px #d3d3d3;
+    color: #2b2b2b;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+
+div.card div.colors img.selected {
+    transform: scale(1.5);
+}
+
+
+div.card div.colors img.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
+div.card h2.price {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgb(26, 26, 26);
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+div.card h4.price-12 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: rgb(26, 26, 26);
+    margin: 0 !important;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+div.card button {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    background: #1a1a1a;
+    color: white;
+    margin: 30px 0 !important;
+    text-align: center;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+.signature {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+img.emphasis {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width: 80%;
+    max-width: 500px;
+    z-index: 9;
+    transform-origin: center;
+    transform-style: preserve-3D;
+    transition: all .1s ease-out;
+    transform: translate(-50%, -50%) rotate(10deg) scale(1);
+    opacity: 1;
+}
+
+
+.transition-all {
+    transition: all .5s ease-in-out !important;
+    transform: translate(-50%, -50%) rotate(360deg) scale(.7) !important;
+    opacity: 0 !important;
+}
+
+
+#basket {
+    border: 0;
+    font-size: 2rem;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+    overflow: visible;
+    cursor: pointer;
+    outline: 0;
+}
+
+
+.basket-jump
+{
+    animation: jumpBasket 1s linear forwards;
+}
+
+
+
+
+.badge {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: rgb(255, 69, 62);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+
+
+
+@keyframes jumpBasket {
+    0% {
+        transform: translate(0, -50%) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: translate(0, -80%) rotate(0deg) scale(1);
+    }
+
+    70% {
+        transform: translate(0, -50%) rotate(0deg) scale(1);
+    }
+    
+    90% {
+        transform: translate(-0%, -80%) rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: translate(0, -50%) rotate(0deg) scale(1);
+    }
+}
+
+
+
+div.history
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #1b1b1e;
+    
+}
+
+div.history img
+{
+    width: 800px;
+    filter: brightness(1.1)    
+}
